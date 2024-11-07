@@ -1,0 +1,273 @@
+<main>
+    <section class="goods">
+        <div class="goods__card">
+            <div class="card__inner">
+                <div class="card__image">
+                    <img src="./imgs/goods/example_tshirt.jpg" alt="">
+                </div>
+                <div class="card__content __tshirt">
+                    <div class="content-title">
+                        <h3>Футболки <span>$14.99</span></h3>
+                    </div>
+                    <div class="content__text">
+                        <p>Мультисекс крій забезпечать універсальний повсякденний образ...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="goods__card __sweatshirt">
+            <div class="card__inner">
+                <div class="card__image">
+                    <img src="./imgs/goods/example_sweatshirt.jpg" alt="">
+                </div>
+                <div class="card__content">
+                    <div class="content-title">
+                        <h3>Світшоти <span>$24.99</span></h3>
+                    </div>
+                    <div class="content__text">
+                        <p>Оверсайз дасть свободу рухів і вибору образу. Велика палітра кольорів...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="goods__card __hood">
+            <div class="card__inner">
+                <div class="card__image">
+                    <img src="./imgs/goods/example_hood.jpg" alt="">
+                </div>
+                <div class="card__content">
+                    <div class="content-title">
+                        <h3>Худі <span>$29.99</span></h3>
+                    </div>
+                    <div class="content__text">
+                        <p>Натуральна бавовна зігріє восени даючи шкірі дихати. Підійде для стиляг...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="space-block"></div>
+
+    <div class="constructor">
+        <div class="constructor__title">
+            <h2>Конструктор <span class="designate-text-gold">вашого</span> принту</h2>
+        </div>
+        <form action="#" name="constructorForm" class="constructor__body">
+            <div class="body__constructor">
+                <div class="constructor__good-img">
+                    <img class="good-img__previu" src="./imgs/constructor_goods/yellow-font_tshirt.webp" alt="">
+                    <div class="good-img__radio-color">
+                        <input type="radio" name="goodColor" id="black-good-color">
+                        <label for="black-good-color" name="color-white" class="radio-color__radio __radio-black"></label>
+    
+                        <input type="radio" name="goodColor" id="yellow-good-color">
+                        <label for="yellow-good-color" name="color-yellow" class="radio-color__radio __radio-yellow"></label>
+    
+                        <input type="radio" name="goodColor" id="white-good-color">
+                        <label for="white-good-color" name="color-black" class="radio-color__radio __radio-white"></label>
+                    </div>
+                    <input type="file" name="upload-image" accept="image/*" id="print-image" class="good-img__uoloader">
+                    <div class="text-overlay"></div>
+                </div>
+                <div class="constructor__settings">
+                    <div class="settings__good-tipe">
+                        <input type="radio" name="goodTipe" value="tshirt" id="tshirt">
+                        <label for="tshirt" name="type-tshirt" class="good-tipe__li"><span><img src="./imgs/icons/tshirt.png" alt="" class="good-tipe__img"></span><span class="good-tipe__content">Футболка</span></label>
+                        
+                        <input type="radio" name="goodTipe" value="sweatshirt" id="sweatshirt">
+                        <label for="sweatshirt" name="type-sweatshirt" class="good-tipe__li"><span><img src="./imgs/icons/sweatshirt.png" alt="" class="good-tipe__img"></span><span class="good-tipe__content">Світшот</span></label>
+                        
+                        <input type="radio" name="goodTipe" value="hood" id="hood">
+                        <label for="hood" name="type-hood" class="good-tipe__li"><span><img src="./imgs/icons/hood.png" alt="" class="good-tipe__img"></span><span class="good-tipe__content">Худі</span></label>
+                    </div>
+                        
+                    <div class="settings__print-position">
+                        <input type="radio" name="printPosition" id="print-position-start">
+                        <label for="print-position-start" name="pposotion-front" class="print-position__radio"><span class="print-position__img"><img src="./imgs/icons/eye.png" alt=""></span>Спереду</label>
+                        
+                        <input type="radio" name="printPosition" id="print-position-back">
+                        <label for="print-position-back" name="pposotion-back" class="print-position__radio __print-position__radio-center-element"><span class="print-position__img"><img src="./imgs/icons/sign-out-alt.png" alt=""></span>Ззаду</label>
+                        
+                        <input type="radio" name="printPosition" id="print-position-asd">
+                        <label for="print-position-asd" name="pposotion-aside" class="print-position__radio"><span class="print-position__img"><img src="./imgs/icons/rotate-right.png" alt=""></span>Збоку</label>
+    
+                    </div>
+                    <span class="hr"></span>
+                    <div class="settings_add-text">
+                        <div class="add-text__input">
+                            <label for="add-text">Власний текст:</label>
+                            <input type="text" maxlength="50" placeholder="Не обов'язково" class="add-text__input" id="add-text">
+                        </div>
+                        <div class="add-text__params">
+                            <div class="params__color-container">
+                                <label for="color-param">Колір</label>
+                                <input type="color" id="color-param" class="params__color">
+                            </div>
+                            <div class="params__fs-container">
+                                <label for="fs-param" class="">Розмір шрифту</label>
+                                <input type="number" name="fs-param" id="fs-param" max="30" class="fs-container__input">
+                            </div>
+                        </div>
+                    </div>
+                    <span class="hr"></span>
+                    <div class="settings__goods-size">
+                        <label class="goods-size__label" for="size-s">S</label>
+                        <input type="radio" name="size" id="size-s">
+    
+                        <label class="goods-size__label" for="size-m">M</label>
+                        <input type="radio" name="size" id="size-m">
+    
+                        <label class="goods-size__label" for="size-l">L</label>
+                        <input type="radio" name="size" id="size-l">
+    
+                        <label class="goods-size__label" for="size-xl">XL</label>
+                        <input type="radio" name="size" id="size-xl">
+    
+                        <label class="goods-size__label" for="size-xxl">XXL</label>
+                        <input type="radio" name="size" id="size-xxl">
+                    </div>
+                    <div class="settings__goods-count">
+                        <div class="goods-count-slider">
+                            <label for="slider__range-counter" class="slider__label">Кількість</label>
+                            <input type="range" value="1" min="1" max="10" id="slider__range-counter">
+                            <input type="number" name="slider__count" id="" class="slider__number-input">
+                        </div>
+                        
+                    </div>
+                    <span class="hr"></span>
+                    <div class="settings__price">
+                        <h3 class="price">Ціна: <span class="price__value">$14.99</span></h3>
+                        <input type="reset" value="Очистити" min="1" max="10" class="price__reset">
+                    </div>
+                </div>
+            </div>
+            <div class="constructor__purchase">
+                <div class="purchase__register">
+                    <div class="register__name">
+                        <input type="text" name="purchaseName" placeholder="Повне ім'я..." class="name-input">
+                        <div class="register__error">
+                            <small class="error-message name-error"></small>
+                        </div>
+                        
+                    </div>
+                    <div class="register__email">
+                        <input type="email" name="purchaseEmail" placeholder="...@gmail.com" class="email-input">
+                        <div class="register__error">
+                            <small class="error-message email-error"></small>
+                        </div>
+                        
+                    </div>
+                    <div class="register__phone">
+                        <div class="phone__inputs">
+                            <input type="text" name="purchasePhoneIndex" value="+380 " disabled class="phone__index">
+                            <input type="text" name="purchasePhone" placeholder="Номер телефону" class="phone__input">
+                        </div>
+                        <div class="register__error">
+                            <small class="error-message phone-error"></small>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="purchase__pay">
+                    <div class="pay__qr-code">
+                        <img src="./imgs/donate_army.png" alt="">
+                    </div>
+                    <div class="pay__subtitle">
+                        <p>Заплати зараз!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="constructor__submit">
+                <input type="submit" value="Замовити" class="submit__button">
+            </div>
+        </form>
+    </div>
+    <span class="constructor-may-like__hr"></span>
+    <div class="may-like">
+        <button class="may-like__arrow-left"> <img src="./imgs/icons/angle-down.png" alt=""> </button>
+        <div class="may-like__cards">
+            <div class="may-like__card">
+                <div class="may-like__body">
+                    <div class="may-like__good-image">
+                        <img src="./imgs/goods/thermal-lined_white_sweatshirt.jpg" alt="">
+                    </div>
+                    <div class="may-like__content">
+                        <div class="may-like__cont-title">
+                            <h3 class="may-like__card-title">Світшот <span class="may-like__price">26.99</span></h3>
+                        </div>
+                        <!-- <div class="may-like__price">
+                            <p></p>
+                        </div> -->
+                        <div class="may-like__text-cont">
+                            <p>Ідеальне поєднання стилю та комфорту</p>
+                        </div>
+                    </div>
+                    <!-- <button class="may-like__card-btn">Купити</button> -->
+                </div>
+            </div>
+            <div class="may-like__card">
+                <div class="may-like__body">
+                    <div class="may-like__good-image">
+                        <img src="./imgs/goods/sorry-im-not_red_hood.jpg" alt="">
+                    </div>
+                    <div class="may-like__content">
+                        <div class="may-like__cont-title">
+                            <h3 class="may-like__card-title">Худі <span class="may-like__price">31.99</span></h3>
+                        </div>
+                        <!-- <div class="may-like__price">
+                            <p></p>
+                        </div> -->
+                        <div class="may-like__text-cont">
+                            <p>Подаруйте собі незабутні враження!</p>
+                        </div>
+                    </div>
+                    <!-- <button class="may-like__card-btn">Купити</button> -->
+                </div>
+            </div>
+            <div class="may-like__card">
+                <div class="may-like__body">
+                    <div class="may-like__good-image">
+                        <img src="./imgs/goods/summer-cat_white_tshirt.jpg" alt="">
+                    </div>
+                    <div class="may-like__content">
+                        <div class="may-like__cont-title">
+                            <h3 class="may-like__card-title">Футболка <span class="may-like__price">16.99</span></h3>
+                        </div>
+                        <!-- <div class="may-like__price">
+                            <p></p>
+                        </div> -->
+                        <div class="may-like__text-cont">
+                            <p>Відчуйте себе особливим з цим товаром</p>
+                        </div>
+                    </div>
+                    <!-- <button class="may-like__card-btn">Купити</button> -->
+                </div>
+            </div>
+            <div class="may-like__card">
+                <div class="may-like__body">
+                    <div class="may-like__good-image">
+                        <img src="./imgs/goods/oversize-outside_lime_tshirt.jpg" alt="">
+                    </div>
+                    <div class="may-like__content">
+                        <div class="may-like__cont-title">
+                            <h3 class="may-like__card-title">Футболка <span class="may-like__price">16.99</span></h3>
+                        </div>
+                        <!-- <div class="may-like__price">
+                            <p></p>
+                        </div> -->
+                        <div class="may-like__text-cont">
+                            <p>Зручна та практична футболка для дому</p>
+                        </div>
+                    </div>
+                    <!-- <button class="may-like__card-btn">Купити</button> -->
+                </div>
+            </div>
+        </div>
+        <button class="may-like__arrow-right"> <img src="./imgs/icons/angle-down.png" alt=""> </button>
+        <div class="may-like__more">
+            <button class="may-like__more-btn">Дивитися більше <span class="more-btn__span"> <img src="./imgs/icons/angle-right.svg" alt="" class="more-btn__img"></span></button>
+        </div>
+    </div>
+
+</main>
