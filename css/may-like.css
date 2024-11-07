@@ -1,0 +1,236 @@
+.constructor-may-like__hr {
+  margin-bottom: 60px;
+}
+
+.may-like {
+  margin: 0 auto 80px auto;
+  padding: 0 60px;
+  max-width: 1400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.may-like__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 20px;
+  gap: 50px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.may-like__card {
+  min-width: 30%;
+  border: solid 3px #e4ab0e;
+  border-radius: 10px;
+  overflow: hidden;
+  border-radius: 30px;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.may-like__arrow-left, .may-like__arrow-right {
+  position: absolute;
+  background-color: transparent;
+  height: 82%;
+}
+.may-like__arrow-left img, .may-like__arrow-right img {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.may-like__arrow-left:hover img, .may-like__arrow-right:hover img {
+  scale: 1.1;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.may-like__arrow-left {
+  left: 0;
+}
+.may-like__arrow-left img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.may-like__arrow-right {
+  right: 0;
+}
+.may-like__arrow-right img {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.may-like__good-image {
+  overflow: hidden;
+}
+.may-like__good-image img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 30px 30px 0 0;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.may-like__good-image:hover img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.may-like__content {
+  padding: 30px;
+}
+
+.may-like__cont-title {
+  font-size: 25px;
+  margin-bottom: 22px;
+  position: relative;
+}
+.may-like__cont-title::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #ccc;
+  bottom: -5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.may-like__cont-title .may-like__price {
+  position: absolute;
+  right: 0;
+  color: #ffbe0b;
+  font-weight: 500;
+}
+.may-like__cont-title .may-like__card-title {
+  font-weight: 500;
+}
+
+.may-like__text-cont {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.may-like__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.may-like__more-btn {
+  clip-path: polygon(95% 0%, 100% 50%, 95% 100%, 0% 100%, 5% 50%, 0% 0%);
+  padding: 20px 0;
+  background-color: #ffbe0b;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  width: 89%;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+}
+.may-like__more-btn:hover {
+  background-color: #fdd055;
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+.may-like__more-btn .more-btn__span {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  display: inline-block;
+  max-width: 24px;
+}
+.may-like__more-btn .more-btn__span .more-btn__img {
+  width: 100%;
+  vertical-align: middle;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+@media (max-width: 1200px) {
+  .may-like {
+    padding: 0 40px;
+  }
+  .may-like__card {
+    min-width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .may-like {
+    padding: 0 20px;
+  }
+  .may-like__cards {
+    gap: 20px;
+  }
+  .may-like__card {
+    min-width: 250px;
+  }
+  .may-like__good-image img {
+    height: 250px;
+  }
+  .may-like__cont-title {
+    font-size: 20px;
+  }
+  .may-like__text-cont {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .may-like {
+    padding: 0 10px;
+  }
+  .may-like__cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+  }
+  .may-like__card {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+  .may-like__card:nth-child(n+4) {
+    display: none;
+  }
+  .may-like__good-image img {
+    height: 200px;
+  }
+  .may-like__cont-title {
+    font-size: 18px;
+  }
+  .may-like__text-cont {
+    font-size: 12px;
+  }
+  .may-like__arrow-left, .may-like__arrow-right {
+    display: none;
+  }
+}
