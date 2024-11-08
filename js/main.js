@@ -22,11 +22,11 @@ addTextPrint();
 import {addImgPrint} from"./js/goods-constructor.js"
 addImgPrint();
 
-import {openFeedbackPopup} from "/js/popups.js"
+import {openFeedbackPopup} from "./js/popups.js"
 openFeedbackPopup();
 
 import {headerBacgroundReplacementTransition} from "./js/header-transitions.js"
 headerBacgroundReplacementTransition();
 
-import {mayLikeSlider} from "/.js/sliders.js"
+import {mayLikeSlider} from "./js/sliders.js"
 mayLikeSlider();
