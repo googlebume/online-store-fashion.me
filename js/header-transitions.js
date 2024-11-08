@@ -1,1 +1,1 @@
-export function headerBacgroundReplacementTransition(){let e=1;setInterval((function(){document.querySelector("header").style.backgroundImage=`url(./imgs/headers/header-image_${e}.jpg)`,e++,e>3&&(e=1)}),1e4)}
+export function headerBacgroundReplacementTransition(){let e=1;setInterval((function(){document.querySelector("header").style.backgroundImage=`url(imgs/headers/header-image_${e}.jpg)`,e++,e>3&&(e=1)}),1e4)}
