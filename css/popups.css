@@ -1,0 +1,165 @@
+.popup__purchase {
+  background-color: rgba(204, 204, 204, 0.5490196078);
+  visibility: hidden;
+  opacity: 0;
+  top: -100%;
+  -webkit-transition: opacity 0.8s ease-in-out, visibility 0s 0.8s;
+  transition: opacity 0.8s ease-in-out, visibility 0s 0.8s;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0px;
+}
+
+.popup__body {
+  background-color: white;
+  padding: 30px 50px;
+  border-radius: 15px;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+.popup__body.__popup__body__animate {
+  -webkit-transform: perspective(600px) translate(0, -100%) rotateX(45deg);
+          transform: perspective(600px) translate(0, -100%) rotateX(45deg);
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.popup__content {
+  text-align: center;
+}
+
+.popup__mark {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.popup__mark img {
+  max-width: 100px;
+}
+
+.popup__title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.popup__purchase.popup__open {
+  visibility: visible;
+  opacity: 1;
+  overflow: hidden;
+  -webkit-transition: opacity 0.8s ease-in-out, visibility 0s 0s;
+  transition: opacity 0.8s ease-in-out, visibility 0s 0s;
+}
+
+.popup__body {
+  background-color: white;
+  padding: 30px 50px;
+  border-radius: 15px;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: perspective(600px) translate(0, -100%) rotateX(70deg);
+          transform: perspective(600px) translate(0, -100%) rotateX(70deg);
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
+}
+
+.popup__body.popup__body__animate {
+  -webkit-transform: perspective(600px) translate(0, 0) rotateX(0deg);
+          transform: perspective(600px) translate(0, 0) rotateX(0deg);
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
+}
+
+.popup__feedback {
+  background-color: rgba(21, 26, 31, 0.6705882353);
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: opacity 0.8s ease-in-out, visibility 0s 0.8s, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out, visibility 0s 0.8s, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out, visibility 0s 0.8s;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out, visibility 0s 0.8s, -webkit-transform 0.8s ease-in-out;
+}
+
+.popup__feedback.__popup__feedback__open {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.popup__body2.__popup__body__animate {
+  -webkit-transform: perspective(600px) translate(0, 0) rotateX(0deg);
+          transform: perspective(600px) translate(0, 0) rotateX(0deg);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.popup__body2 {
+  background-color: #151a1f;
+  padding: 30px 50px;
+  border-radius: 15px;
+}
+
+.popup__logo-about {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+.popup__logo-about .logo__img {
+  margin-right: 10px;
+}
+.popup__logo-about .logo__img img {
+  width: 50px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+.popup__logo-about .logo__title {
+  font-size: 2.3rem;
+}
+
+.about__phone-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  color: white;
+}
