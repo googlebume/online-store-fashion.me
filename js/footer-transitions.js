@@ -1,1 +1,0 @@
-function footerTransitions(){const e=document.querySelector(".buyer__lis"),t=document.querySelector(".shop__lis");document.querySelector(".info__columns").addEventListener("click",(function(o){o.target.closest(".info__buyer")&&e.classList.toggle("info__lis__active"),o.target.closest(".info__shop")&&t.classList.toggle("info__lis__active")}))}
