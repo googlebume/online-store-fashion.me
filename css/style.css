@@ -1147,6 +1147,7 @@ header {
   padding: 10px 20px;
   display: block;
   border-radius: 10px;
+  cursor: pointer;
   -webkit-box-shadow: -2px -2px 5px #ccc, -2px -2px 5px #ccc inset;
           box-shadow: -2px -2px 5px #ccc, -2px -2px 5px #ccc inset;
 }
