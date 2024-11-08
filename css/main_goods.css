@@ -148,7 +148,7 @@
 .space-block::before {
   content: "";
   position: absolute;
-  background-image: url(./imgs/icons/tag.png);
+  background-image: url(/imgs/icons/tag.png);
   background-size: cover;
   background-position: center;
   left: 10px;
