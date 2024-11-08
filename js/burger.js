@@ -1,1 +1,0 @@
-function showBurger(){const e=document.querySelector(".top-menu__burger"),r=document.querySelector(".burger__menu"),t=document.querySelector(".burger");addEventListener("click",(function(o){o.target.closest(".top-menu__burger")&&(r.classList.toggle("__burger-menu-active"),e.classList.toggle("__burger-color-active"),t.classList.toggle("__close-burger"))}))}
