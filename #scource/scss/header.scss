@@ -373,6 +373,7 @@ header {
 @media (max-width: 595px){
     .burger__menu {
         border-bottom-left-radius: 100px;
+        width: 100vw;
         .top-menu__ul {
             .top-menu__li {
                 font-size:  30px;
@@ -389,10 +390,31 @@ header {
     .header__title {
         font-size: 50px;
     }
+    .top-bar {
+        .top-bar__logo{
+            .top-bar-img{
+                img{
+                    width: 40px;
+                }
+            }
+            .top-bar__title{
+                font-size: 2.0rem;
+            }
+        }
+    }
+    .menu-container__top-menu{
+        height: 40px;
+        .top-menu__burger {
+            transform: scale(0.9);
+        }
+    }
 }
 @media (max-width: 530px){
     .to-shop{
         padding: 22px 50px;
+    }
+    .burger__menu{
+        margin: -4px -4px 0 0;
     }
 }
 
