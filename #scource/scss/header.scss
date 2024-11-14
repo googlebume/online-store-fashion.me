@@ -155,6 +155,7 @@ header {
 .to-shop, .support-us {
     position: relative;
     background-color: transparent;
+    backdrop-filter: blur(2px);
     font-family: "Noto Sans", sans-serif;
     font-weight: 700;
     font-size: 24px;
