@@ -138,6 +138,14 @@
     .space-block {
         margin-bottom: 100px;
     }
+    .goods__card {
+        &::before, &::after {
+            content: none;
+        }
+        &:first-child::before, &:last-child::after {
+            content: none;
+        }
+    }
 }
 
 @media(max-width: 1280px) {
@@ -157,7 +165,7 @@
     }
     .goods__card {
         margin-bottom: 15px;
-        width: 100%;
+        width: 80%;
         &.goods__card-animate {
             transform: translate(0);
             &:nth-of-type(3){
@@ -170,12 +178,6 @@
                 transition: all 400ms ease-in-out 1ms;
             }
         }
-        &::before, &::after {
-            content: none;
-        }
-        &:first-child::before, &:last-child::after {
-            content: "";
-          }
     }
     .goods__card {
         max-width: 100%;
