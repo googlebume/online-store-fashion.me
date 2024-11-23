@@ -290,8 +290,8 @@ header {
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            width: 100vw;
             height: 90vh;
+            width: 100vw;
             transition: all 200ms ease-in ;
             top: -15%;
             right: -30%;
@@ -341,6 +341,14 @@ header {
         .support-us {
             margin: 0 0 10px 80px;
         }
+    }
+    .top-menu__ul {
+        .top-menu__li {
+            font-size: 30px;
+        }
+    }
+    .top-menu__burger .burger__menu .top-menu__ul .top-menu__img img {
+        width: 40px;
     }
 }
 @media (min-width: 768px){
