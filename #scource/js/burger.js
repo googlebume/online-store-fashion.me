@@ -1,1 +1,13 @@
-export function showBurger(){const e=document.querySelector(".top-menu__burger"),t=document.querySelector(".burger__menu"),r=document.querySelector(".burger");addEventListener("click",(function(o){o.target.closest(".top-menu__burger")&&(t.classList.toggle("__burger-menu-active"),e.classList.toggle("__burger-color-active"),r.classList.toggle("__close-burger"),document.body.classList.toggle("stop-sctoll"))}))}
+export function showBurger() {
+    const burgerButton = document.querySelector('.top-menu__burger');
+    const burgerMenu = document.querySelector('.burger__menu');
+    const burgerSpan = document.querySelector('.burger');
+    addEventListener('click', function clickInBurger(event) {
+        if (event.target.closest('.top-menu__burger')) {
+            burgerMenu.classList.toggle('__burger-menu-active');
+            burgerButton.classList.toggle('__burger-color-active');
+            burgerSpan.classList.toggle('__close-burger');
+            document.body.classList.toggle('stop-sctoll');
+        }
+    });
+}
