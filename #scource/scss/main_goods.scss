@@ -1,7 +1,8 @@
 .goods {
     display: flex;
     justify-content: space-evenly;
-    margin: 100px 0 100px 0;
+    margin: 100px auto 100px auto;
+    max-width: 1500px;
     .__tshirt {
         order: 1;
     }
@@ -165,7 +166,7 @@
     }
     .goods__card {
         margin-bottom: 15px;
-        width: 80%;
+        width: 100%;
         &.goods__card-animate {
             transform: translate(0);
             &:nth-of-type(3){
