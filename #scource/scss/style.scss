@@ -17,11 +17,8 @@ body {
     overflow: hidden;
 }
 
-// * {
-//     &:last-child {
-//         margin-bottom: 0px;
-//     }
-// }
 main {
-    flex: 1 1 100%;
+    // flex: 1 1 1000px;
+    // max-width: 1800px;
+    padding: 0 auto;
 }
