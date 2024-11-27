@@ -3,6 +3,7 @@ footer {
     color: white;
     display: flex;
     flex-wrap: wrap;
+    padding: 0 auto;
 }
 
 .footer__space-block {
@@ -13,7 +14,7 @@ footer {
 }
 .footer__content {
     margin: 0 auto;
-    width: 90%;
+    max-width: 1800px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -215,6 +216,11 @@ footer {
     .sotial-networks__network{
         width: 70px;
     }
+    .footer__content{
+        .content__info {
+            padding: 30px 0px 30px 40px;
+        }
+    }
 }
 @media(max-width: 509px){
     .footer-info__other {
@@ -279,5 +285,13 @@ footer {
 @media(max-width: 376px){
     .content__info {
         padding: 30px 20px 30px 20px;
+    }
+}
+
+@media(min-width: 1921px) {
+    .footer__content{
+        .content__info {
+            padding: 30px 0px 30px 0px;
+        }
     }
 }
