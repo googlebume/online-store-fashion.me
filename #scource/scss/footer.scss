@@ -14,7 +14,7 @@ footer {
 }
 .footer__content {
     margin: 0 auto;
-    max-width: 1800px;
+    width: 1300px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -22,9 +22,8 @@ footer {
 
 .content__info {
     display: block;
-    padding: 30px 0px 30px 40px ;
+    padding: 30px 0px 30px 0px;
     flex-wrap: wrap;
-    // max-width: 60%;
     min-width: 50%;
     margin-right: 15px;
 }
@@ -183,6 +182,14 @@ footer {
     }
 }
 
+@media(max-width: 1229px) {
+    .footer__content{
+        .content__info {
+            padding: 30px 0px 30px 30px;
+        }
+    }
+}
+
 @media(max-width: 794px) {
     .content__info {
         margin-right: 0;
@@ -230,6 +237,11 @@ footer {
         }
         .other__bunk {
             margin: 0 auto;
+        }
+    }
+    .other__social-networks {
+        .sotial-networks__network{
+            padding: 15px;
         }
     }
 }
@@ -285,13 +297,5 @@ footer {
 @media(max-width: 376px){
     .content__info {
         padding: 30px 20px 30px 20px;
-    }
-}
-
-@media(min-width: 1921px) {
-    .footer__content{
-        .content__info {
-            padding: 30px 0px 30px 0px;
-        }
     }
 }
