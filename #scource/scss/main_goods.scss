@@ -16,6 +16,7 @@
 .goods__card{
     position: relative;
     max-width: 26%;
+    height: 100%;
     transform: translateX(-100vw);
     &.goods__card-animate {
         transform: translate(0);
@@ -139,16 +140,21 @@
     .space-block {
         margin-bottom: 7rem;
     }
+    .goods {
+        margin: 40px auto 40px auto;
+    }
     .goods__card {
         &::before, &::after {
-            content: none;
+            height: 3rem;
         }
-        &:first-child::before, &:last-child::after {
-            content: none;
+        &::before {
+            top: -40px;
+            left: 30%;
         }
-    }
-    .goods {
-        margin: 50px auto 40px auto;
+        &::after {
+            bottom: -40px;
+            right: 30%;
+        }
     }
 }
 
@@ -165,6 +171,14 @@
         .__hood {
             order: 1;
             margin-bottom: 10px;
+        }
+        .goods__card {
+            &::before, &::after {
+                content: none;
+            }
+            &:first-child::before, &:last-child::after {
+                content: none;
+            }
         }
     }
     .goods__card {
